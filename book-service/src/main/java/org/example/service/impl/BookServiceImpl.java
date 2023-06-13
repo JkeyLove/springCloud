@@ -15,6 +15,9 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book getBookById(int bid) {
-        return mapper.getBookById(bid);
+
+        Book bookById = mapper.getBookById(bid);
+
+        return bookById;
     }
 }
